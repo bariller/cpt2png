@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+
+# macOS
+.DS_Store
+
+# Images: never publish personal files by mistake
+*.cpt
+*.CPT
+*.png
+*.cdr
+*_layers/
+masks/

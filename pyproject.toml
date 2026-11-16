@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cpt2png"
+version = "1.0.0"
+description = "Convert Corel PHOTO-PAINT images (.cpt) to PNG, losslessly"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.20", "Pillow>=9.1"]
+keywords = ["corel", "photo-paint", "cpt", "png", "conversion", "image"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+]
+
+[project.urls]
+Homepage = "https://github.com/bariller/cpt2png"
+
+[project.scripts]
+cpt2png = "cpt2png.convert:main"
+
+[tool.setuptools]
+packages = ["cpt2png"]
